@@ -45,4 +45,4 @@ To run the code and reproduce the results, you will need the following software 
 
 ## Acknowledgments
 
-We would like to thank Alessio Paviglianiti for fruitful exchanges regarding the simulated annealing code. The module `simulated_annealing` is based on his original code to perform simulated annealing [any collaborators, institutions, or funding sources].
+We would like to thank Alessio Paviglianiti for fruitful exchanges regarding the simulated annealing code. The module `simulated_annealing` is based on his original code to perform simulated annealing.
