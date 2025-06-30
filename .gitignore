@@ -1,7 +1,12 @@
-# Ignore everything
-*
+/src/__pycache__
 
-# But not these files...
-!*.py
-!*.md
-!.gitignore
+data/*
+
+results/*
+
+src/triphase/scripts_and_outputs
+src/triphase/*.zip
+src/triphase/*.tar.gz
+
+*.ipynb
+*.png

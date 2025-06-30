@@ -2,12 +2,14 @@
 
 This repository will contain all the codes and data associated with the publication of the paper titled "Multipartite Entanglement Structure of Monitored Quantum Circuits". [arXiv:2412.16062](https://arxiv.org/abs/2412.16062)
 
+![50%](https://progress-bar.xyz/60?title=Files+uploaded)
+
 ## Contents
 
 - `src/`: Source code for simulations and data analysis.
 - `data/`: Raw and processed data used in the publication.
 - `results/`: Figures and tables generated from the data.
-- `docs/`: Additional documentation and supplementary materials.
+- `docs/`: Additional documsentation and supplementary materials.
 
 ## Requirements
 
@@ -39,7 +41,7 @@ To run the code and reproduce the results, you will need the following software 
 
 ## Authors
 
-- Arnau Lira Solanilla (lirasola\[at\]thp.uni-koeln.de)
+- Arnau Lira Solanilla (see [website](https://www.qhaos.org/people) for contact details)
 
 ## Acknowledgments
 
