@@ -314,4 +314,4 @@ for pz,pu in ps:
     qfi_traj, err_traj = sim_annealing(schedule, repeats, C, L)
     QFI.append([pz, pu, qfi_traj, err_traj])
 if np.shape(QFI)[1] > 0:
-    np.savetxt(f'/scratch/alirasol/triphase_data/surface/L{L}_seed{seed}_qfi_ann.txt', QFI)
+    np.savetxt(f'triphase_data/surface/L{L}_seed{seed}_qfi_ann.txt', QFI)

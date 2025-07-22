@@ -352,5 +352,5 @@ for pz, pu in ps:
         file_name = f'L{L}_pz'+f'{pz:.3f}'[2:] + \
             '_pu' + f'{pu:.3f}'[2:]+f'_seed{seed}'
         np.save(f'data/correlations/{file_name}_C_', C)
-np.savetxt(f'data/surface_entanglement/L{L}_seed{seed}_S_.txt',
+np.savetxt(f'surface_entanglement/L{L}_seed{seed}_S_.txt',
            np.array(ent_data))

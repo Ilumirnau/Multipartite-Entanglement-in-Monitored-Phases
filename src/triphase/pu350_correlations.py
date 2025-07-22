@@ -263,7 +263,6 @@ def sim_annealing(schedule, repeats, C, l):
     qfi = 0
     error = 0
     for rep in range(repeats):
-        #print(f'Optimizing repetition {rep}')
         phis = np.pi * (2 * np.random.random_sample(l) - np.ones(l))
         thetas = np.pi * np.random.random_sample(l)
         for i in range(num_Ts):
@@ -279,9 +278,6 @@ def sim_annealing(schedule, repeats, C, l):
 #annealing schedule: number of iterations at T, the temperature, delta (angle variation parameter)
 schedule = np.array([[4000,1.,np.pi/1.5],[3500,0.8,np.pi/1.5],[3500,0.6,np.pi/1.5],[3500,0.4,np.pi/1.5],[3500,0.2,np.pi/1.5],
                   [5000,0.1,np.pi/2],[5000,0.08,np.pi/2],[5000,0.06,np.pi/2],[5000,0.04,np.pi/2],[5000,0.02,np.pi/4],
-                  #[500,0.01,np.pi/4],#[5000,0.008,np.pi/4],[5000,0.006,np.pi/4],[5000,0.004,np.pi/4],[5000,0.002,np.pi/4],
-                  #[5000,0.001,np.pi/6],[5000,0.0008,np.pi/6],[5000,0.0006,np.pi/6],[5000,0.0004,np.pi/6],[5000,0.0002,np.pi/6],
-                  #[5000,0.0001,np.pi/15],[5000,0.00007,np.pi/15],[6000,0.00005,np.pi/15]#,[6000,0.00003,np.pi/30]#,[0,0.00001,np.pi/30],
                   ])
 repeats = 5
 
@@ -315,9 +311,8 @@ for pz,pu in ps:
 
     C = corr_matrix(psi)
     file_name = f'L{L}_pz'+f'{pz:.3f}'[2:]+f'_pu'+f'{pu:.3f}'[2:]+f'_seed{seed}'
-    #np.save(f'/scratch/alirasol/triphase_data/correlations/{file_name}_C_', C)
     qfi_traj, err_traj = sim_annealing(schedule, repeats, C, L)
     QFI.append([pz, pu, qfi_traj, err_traj])
 if np.shape(QFI)[1] > 0:
-    np.savetxt(f'/scratch/alirasol/triphase_data/QFI/pu350_L{L}_seed{seed}_qfi_ann.txt', QFI)
+    np.savetxt(f'triphase_data/QFI/pu350_L{L}_seed{seed}_qfi_ann.txt', QFI)
 print(f'QFI density calculated for L {L} seed {seed}')
