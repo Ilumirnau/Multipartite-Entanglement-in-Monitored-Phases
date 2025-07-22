@@ -3,7 +3,8 @@
 - `src/monitored_haar.py`: Module for simulating dynamics and computing correlations in Haar-random circuits.
 - `src/measurement_only.py`: Module for simulating entanglement dynamics and computing the QFI density in measurement-only circuits (XX and Z).
 - `src/simulated_annealing.py`:  Module to perform simulated annealing using the QFI density as the cost function.
-- `src/monitored_structured`: Model to simulate 
+- `src/monitored_structured`: Module to simulate monitored structured random quantum circuits.
+- `src/ED_symmetries/*_circuits`: Module to calculate Z2 and U1 symmetric circuits using exact diagonalization (ED).
 
 ## Scripts
 - `src/annealing_clifford.py`: Script to perform simulated annealing on correlation functions generated in monitored Clifford circuits using the QFI density as the cost function.

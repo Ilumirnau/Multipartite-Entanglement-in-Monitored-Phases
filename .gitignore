@@ -1,12 +1,8 @@
 /src/__pycache__
 
-data/*
-
-results/*
-
 src/triphase/scripts_and_outputs
 src/triphase/*.zip
 src/triphase/*.tar.gz
 
-*.ipynb
-*.png
+data/*.csv
+data/*.npy
